@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        이상형 월드컵 32강(4/16)
+    </title>
+    <style>
+        div1{
+            margin : 10px;
+            position : absolute;
+            width: 600px;
+            height: 80px;
+        }
+        div2{
+            position : absolute;
+            margin: 10px;
+        }
+        h2{
+            position : absolute;
+            width : 200px;
+            margin: 10px;
+            text-align : center;
+        }
+        input{
+            width : 200px;
+        }
+    </style>
+</head>
+<body style="background-image: url('배경화면0002.jpg');">
+
+    <div1 style="left: 35%; top: 30px;">
+        <h1 style="color: white">지브리 캐릭터 이상형 월드컵 32강(4/16)</h1>
+    </div1>
+
+    <h2 id="A" style="left: 32%; top: 300px; background-color: rgb(98, 98, 189);">
+        소스케
+    </h2>
+
+    <h2 id="A" style="left: 59%; top: 300px; background-color: rgb(98, 98, 189);">
+        쿠사카베 메이
+    </h2>
+
+    <div2 style="left: 32%; top: 350px;">
+        <img src="image0007.png" width="200px" height="266px">
+    </div2>
+
+    <div2 style="left: 59%; top: 350px;">
+        <img src="image0008.png" width="200px" height="266px">
+    </div2>
+
+    <div2 style="left: 32%; top: 650px">
+        <input type="submit" value="선택하기" height="100px" onclick="CASE7(this)" id = "win1"
+        style="font-size: 35px; background-color: rgb(98, 98, 189);"
+        onmouseover="this.style='font-size: 35px; background-color: red;'"
+        onmouseout="this.style='font-size: 35px; background-color: rgb(98, 98, 189);'">
+    </div2>
+
+    <div2 style="left: 59%; top: 650px;">
+        <input type="submit" value="선택하기" height="100px" onclick="CASE8(this)" id = "win2"
+        style="font-size: 35px; background-color: rgb(98, 98, 189);"
+        onmouseover="this.style='font-size: 35px; background-color: red;'"
+        onmouseout="this.style='font-size: 35px; background-color: rgb(98, 98, 189);'">
+    </div2>
+    
+    <div2 style="right: 0px;">
+        <a href="WebGame001Start1.html">
+        <input type="submit" value="포기하기" style="font-size: 35px; background-color: rgb(98, 98, 189);">
+        </a>
+    </div2>
+
+    <script>
+        var score78 = document.getElementById("win1");
+        score78.addEventListener("click", CASE7);
+
+        function CASE7(obj){
+            localStorage.setItem("img7score",1);
+            location.href = "WebGame001Start6.html";
+        }
+
+        var score12 = document.getElementById("win2");
+        score12.addEventListener("click", CASE8);
+
+        function CASE8(obj){
+            localStorage.setItem("img8score",1);
+            location.href = "WebGame001Start6.html";
+        }
+    </script>
+</body>
+</html>
